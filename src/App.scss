@@ -1,0 +1,75 @@
+.header {
+  background: white;
+  height: 10vh;
+  /* 상하좌우 가운데 정렬 */
+  display: flex;
+  justify-content: right;
+  margin-right: 4vw;
+  align-items: center;
+  // fixed header 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; // swiper가 header 위에 overlap하는 현상 방지
+
+  .header-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .search-button {
+    margin-right: 4vw;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 30vh;
+}
+
+.banner-carousel {
+  z-index: -1;
+  margin-top: 10vh;
+  width: 100%;
+  height: 30vh;
+}
+
+.section {
+  margin-bottom: 20px;
+  
+  .section-header {
+    display: flex;
+    width: 100%;
+    div {
+      padding: 10px;
+    }
+    .section-title {
+      width: 100px;
+    }
+    .my-page-btn {
+      margin-left: auto;
+    }
+  }
+
+  .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10px;
+    height: 20vh;
+    border: 1px solid black;
+    border-radius: 4px;
+  }
+
+}
+
+
+
+
+
